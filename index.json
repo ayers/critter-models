@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "spot-efficiency-200k",
+      "name": "Spot Locomotion Efficiency 200k",
+      "robotKey": "boston_dynamics_spot",
+      "obsDim": 47,
+      "actionDim": 12,
+      "onnxPath": "models/spot/ppo_spot_locomotion_efficiency_200k.onnx",
+      "vecnormalizePath": "models/spot/ppo_spot_locomotion_efficiency_200k.vecnormalize.json",
+      "notes": "Recommended default walking model."
+    },
+    {
+      "id": "spot-stageb-300k",
+      "name": "Spot Locomotion StageB 300k",
+      "robotKey": "boston_dynamics_spot",
+      "obsDim": 47,
+      "actionDim": 12,
+      "onnxPath": "models/spot/ppo_spot_locomotion_stageB_300k.onnx",
+      "vecnormalizePath": "models/spot/ppo_spot_locomotion_stageB_300k.vecnormalize.json",
+      "notes": "Earlier stage-B checkpoint."
+    }
+  ]
+}

@@ -7,6 +7,8 @@ Trained model artifacts for browser-native Critter inference.
 - `index.json`: model catalog consumed by apps.
 - `models/spot/*.onnx`: ONNX actor exports.
 - `models/spot/*.vecnormalize.json`: SB3 VecNormalize stats for observation normalization.
+- `models/go2/*.onnx`: ONNX actor exports.
+- `models/go2/*.vecnormalize.json`: SB3 VecNormalize stats for observation normalization.
 
 ## Catalog format
 

@@ -2,14 +2,24 @@
   "schemaVersion": 1,
   "models": [
     {
-      "id": "spot-efficiency-200k",
+      "id": "go2-walk-stagef",
+      "name": "Go2 Walk",
+      "robotKey": "unitree_go2",
+      "obsDim": 47,
+      "actionDim": 12,
+      "onnxPath": "models/go2/ppo_go2_locomotion_stageF_speedpolish_300k_auto.onnx",
+      "vecnormalizePath": "models/go2/ppo_go2_locomotion_stageF_speedpolish_300k_auto.vecnormalize.json",
+      "notes": "Go2 Stage F speed-polish (300k auto) with gated efficiency shaping."
+    },
+    {
+      "id": "spot-walk-locomotion",
       "name": "Spot Walk",
       "robotKey": "boston_dynamics_spot",
       "obsDim": 47,
       "actionDim": 12,
-      "onnxPath": "models/spot/ppo_spot_locomotion_stageE_polish_500k.onnx",
-      "vecnormalizePath": "models/spot/ppo_spot_locomotion_stageE_polish_500k.vecnormalize.json",
-      "notes": "Stage E polish model with gait-balance penalties."
+      "onnxPath": "models/spot/ppo_spot_locomotion_stageH_retry_1m.onnx",
+      "vecnormalizePath": "models/spot/ppo_spot_locomotion_stageH_retry_1m.vecnormalize.json",
+      "notes": "Spot Stage H2 retry (1M) from Stage G with gated efficiency shaping."
     }
   ]
 }
